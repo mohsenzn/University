@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>University Website || HomePage</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-</head>
-<body>
-    
-</body>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- nav -->
+      <nav>
+        <!-- logo -->
+        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"/></a>
+        <div class="nav__links" id="nav__links">
+            <i class="fa fa-times" onClick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="index.html" class="nav__link">About</a></li>
+            <li><a href="index.html" class="nav__link">COURSE</a></li>
+            <li><a href="index.html" class="nav__link">BLOG</a></li>
+            <li><a href="index.html" class="nav__link">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars " onClick="showMenu()" ></i>
+      </nav>
+      <!-- hero -->
+      <div class="hero">
+        <h1 class="hero__title">World's Biggest University</h1>
+        <p class="lead">
+          Making website is now one of the easiest thing in the world. You just
+          need to learn HTML, CSS,<br />
+          JavaScript and you are good to go.
+        </p>
+        <a href="index.html" class="btn">Visit Us to Know More</a>
+      </div>
+    </header>
+    <script >
+        let navLinks = document.querySelector("#nav__links");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px ";
+        }
+    </script>
+  </body>
 </html>

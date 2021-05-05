@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website || HomePage</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="sub__header">
+      <!-- nav -->
+      <nav>
+        <!-- logo -->
+        <a href="index.html"
+          ><img src="images/logo.png" alt="Logo" class="logo"
+        /></a>
+        <div class="nav__links" id="nav__links">
+          <i class="fa fa-times" onClick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li><a href="index.html" class="nav__link">COURSE</a></li>
+            <li><a href="index.html" class="nav__link">BLOG</a></li>
+            <li><a href="index.html" class="nav__link">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onClick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </header>
+    <!-- end of header -->
+    <!-- About US -->
+    <section class="about__us">
+      <div class="row">
+        <div class="about__col">
+          <h1>We Are the World's Largest university</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            numquam placeat vel, nobis id odio molestiae saepe minima sunt nihil
+            adipisci sequi consequatur deleniti dolores vitae in tempore laborum
+            maxime nisi quae praesentium necessitatibus. Quo nobis nemo eaque
+            aliquam odit.
+          </p>
+          <a href="#" class="btn btn__red">Explore NOw</a>
+        </div>
+        <div class="about__col">
+            <img src="images/about.jpg" alt="About Us">
+        </div>
+      </div>
+    </section>
+    <!-- end of About Us -->
+    <!-- footer -->
+    <footer class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, odio?
+        Aperiam amet quibusdam voluptas reiciendis dicta excepturi <br />
+        perferendis nihil voluptatibus provident, maiores iure eum
+      </p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="far fa-heart"></i> Web Persia</p>
+    </footer>
+    <!-- script -->
+    <script>
+      let navLinks = document.querySelector("#nav__links");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px ";
+      }
+    </script>
+  </body>
+</html>

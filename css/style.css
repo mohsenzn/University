@@ -420,3 +420,64 @@ nav .fa {
 .about__col p{
     padding: 15px 0 25px;
 }
+/* blog Page */
+.blog__content{
+    width:80%;
+    margin: auto;
+    padding:60px 0;
+}
+.blog__left{
+    flex-basis: 68%;
+    padding-right: 30px;
+}
+.blog__left  img{
+    width: 100%;
+    object-fit: contain;
+     border-radius: 10px;
+}
+.blog__left h2{
+   margin: 2rem 0;
+    color:#222;
+    font-weight: 500;
+}
+.blog__left p{
+    color: #999;
+    padding: 0;
+}
+.blog__right{
+    flex-basis: 32%;
+    text-align: center;
+}
+.blog__right h3{
+    background: var(--secondColor);
+    color: var(--mainWhite);
+    padding:10px 0;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.blog__right div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+}
+.comment__box{
+    border: 1px solid #ccc;;
+    margin: 3rem 0;
+    padding: 0.6rem 1.2rem;
+}
+.comment__box h3{
+    text-align: left;
+}
+.comment__form input, .comment__form textarea{
+    width:100%;
+    padding:10px;
+    margin: 15px 0;
+    border:none;
+    outline:none;
+    background:#f0f0f0; 
+}
+.comment__form button{
+    margin-bottom: 15px;
+}
